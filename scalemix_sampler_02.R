@@ -360,12 +360,12 @@ scalemix.sampler.02 <- function(S, cen, initial.values,
       # lines(curr.draw, col=alpha("gray80", 0.05))
       # # points(X.imp[ ,j], col=2, pch=20, cex=0.5)
       # Sys.sleep(0.1)
-      state <- list(cen=cen, S=S, thresh=thresh,
+      state <- list(cen=cen, S=S, 
                     experiment.name="Huser-wadsworth",
                     i=i, sigma.m=sigma.m, prop.Sigma=prop.Sigma, 
                     X=X, X.s=X.s, prob.below=prob.below,
                     delta=delta, R=R, tau=tau, theta.c=theta.c)
-      out.obj <- list(cen=cen, S=S, thresh=thresh,
+      out.obj <- list(cen=cen, S=S, 
                       i=i,
                       X.s.trace=X.s.trace,
                       X.trace=X.trace,
