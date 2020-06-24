@@ -57,7 +57,7 @@ n.updates <- 50000
 thin <- 10
 echo.interval <- 50
 true.params <- list(delta = delta, tau=tau, theta.c=c(range,nu), prob.below=prob.below, X.s=X.s, R=R, S=S)
-save(Y, X, thresh.X, cen, true.params, file="Initial.RData")
+save(X, thresh.X, cen, true.params, file="Initial.RData")
 
 
 
