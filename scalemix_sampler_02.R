@@ -145,6 +145,9 @@ scalemix.sampler.02 <- function(S, cen, initial.values,
       ################################################################
       ## Update X -- branching: use X.s
       ################################################################
+      library(doParallel)
+      library(foreach)
+      registerDoParallel(cores=n.t)
       X<-foreach(t = 1:n.t, .combine = "cbind") %dopar% {
         tmp <- X[,t]
         for(loca in 1:n.s){
